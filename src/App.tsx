@@ -81,13 +81,20 @@ function App() {
       </div>
       
       {/* Preview Section - Bottom */}
-      <div className="relative container h-full mt-14 bg-neutral-900/70 lg:bg-neutral-900/40 z-40">
+      
+      <div className="relative no-scrollbar overflow-x-hidden w-full min-h-screen lg:min-h-[85vh] lg:h-[85vh] lg:max-h-[85vh] rounded-lg bg-neutral-900 shadow-lg shadow-black">
+
         <div className="p-4">
           <h3 className="text-white text-center text-sm font-medium mb-3">Visualização em tempo real</h3>
           <Preview formData={formData} />
         </div>
+
+         
+
+
       </div>
     </div>
+    
   );
 }
 
