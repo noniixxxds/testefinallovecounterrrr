@@ -81,7 +81,7 @@ function App() {
       </div>
       
       {/* Preview Section - Bottom */}
-      <div className="bg-gray-800 border-t border-gray-700">
+      <div className="relative container h-full mt-14 bg-neutral-900/70 lg:bg-neutral-900/40 z-40">
         <div className="p-4">
           <h3 className="text-white text-center text-sm font-medium mb-3">Visualização em tempo real</h3>
           <Preview formData={formData} />
