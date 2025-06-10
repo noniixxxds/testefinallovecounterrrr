@@ -173,7 +173,7 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
         <div className="">
 
           <div className="text-center">
-            <h1 className="text-lg font-bold text-red-400 mb-1 font-serif italic">
+            <h1 className="text-lg font-bold text-red-600  text-3xl   mb-1 font-serif italic">
               
               {formData.pageTitle || '(visualização em tempo real)'}
             </h1>
@@ -194,7 +194,7 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
 
           {formData.message && (
             <div className="text-center">
-              <p className="text-white text-xs leading-relaxed">
+              <p className="text-white text-2xl leading-relaxed">
                 {formData.message}
               </p>
             </div>
@@ -202,34 +202,34 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
 
           {timeDiff && (
             <div className="text-center">
-              <p className="text-white text-xs mb-3">Compartilhando momentos há</p>
+              <p className="text-white text-2xl mb-3">Compartilhando momentos há</p>
               
               <div className="grid grid-cols-3 gap-1 text-center">
                 <div className="bg-gray-700/50 rounded-lg p-2">
-                  <div className="text-white text-sm font-bold">{timeDiff.years.toString().padStart(2, '0')}</div>
+                  <div className="text-white text-2xl font-bold">{timeDiff.years.toString().padStart(2, '0')}</div>
                   <div className="text-gray-400 text-xs">anos</div>
                 </div>
                 <div className="bg-gray-700/50 rounded-lg p-2">
-                  <div className="text-white text-sm font-bold">{timeDiff.months.toString().padStart(2, '0')}</div>
+                  <div className="text-white text-2xl font-bold">{timeDiff.months.toString().padStart(2, '0')}</div>
                   <div className="text-gray-400 text-xs">meses</div>
                 </div>
                 <div className="bg-gray-700/50 rounded-lg p-2">
-                  <div className="text-white text-sm font-bold">{timeDiff.days.toString().padStart(2, '0')}</div>
+                  <div className="text-white text-2xl font-bold">{timeDiff.days.toString().padStart(2, '0')}</div>
                   <div className="text-gray-400 text-xs">dias</div>
                 </div>
               </div>
               
               <div className="grid grid-cols-3 gap-1 text-center mt-1">
                 <div className="bg-gray-700/50 rounded-lg p-2">
-                  <div className="text-white text-sm font-bold">{timeDiff.hours.toString().padStart(2, '0')}</div>
+                  <div className="text-white text-2xl font-bold">{timeDiff.hours.toString().padStart(2, '0')}</div>
                   <div className="text-gray-400 text-xs">horas</div>
                 </div>
                 <div className="bg-gray-700/50 rounded-lg p-2">
-                  <div className="text-white text-sm font-bold">{timeDiff.minutes.toString().padStart(2, '0')}</div>
+                  <div className="text-white text-2xl font-bold">{timeDiff.minutes.toString().padStart(2, '0')}</div>
                   <div className="text-gray-400 text-xs">minutos</div>
                 </div>
                 <div className="bg-gray-700/50 rounded-lg p-2">
-                  <div className="text-white text-sm font-bold">{timeDiff.seconds.toString().padStart(2, '0')}</div>
+                  <div className="text-white text-2xl font-bold">{timeDiff.seconds.toString().padStart(2, '0')}</div>
                   <div className="text-gray-400 text-xs">segundos</div>
                 </div>
               </div>
@@ -238,7 +238,7 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
 
           {formData.youtubeUrl && (
             <div className="bg-red-600/20 rounded-lg p-2 text-center">
-              <p className="text-red-300 text-xs">🎵 Música: YouTube</p>
+              <p className="text-red-300 text-2xl">🎵 Música: YouTube</p>
             </div>
           )}
 
