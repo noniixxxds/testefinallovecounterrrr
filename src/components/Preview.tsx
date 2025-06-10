@@ -110,10 +110,10 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
   const timeDiff = calculateTimeDifference(formData.startDate);
 
   return (
-    <div className="w-full max-w-sm mx-auto h-96 bg-gray-900 rounded-xl overflow-hidden relative shadow-2xl">
+    <div className="w-full max-w-sm mx-auto h-10000 bg-gray-10000 rounded-xl overflow-hidden relative shadow-2xl">
       {getAnimationComponent()}
       
-      <div className="relative z-10 h-full flex flex-col">
+      <div className="">
         {/* Photo Carousel */}
         {formData.photos.length > 0 && (
           <div className="relative h-48 bg-gray-700 overflow-hidden">
@@ -167,15 +167,30 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
         )}
         
         {/* Content */}
-        <div className="flex-1 p-4 space-y-3 overflow-y-auto">
+
+
+        
+        <div className="">
+
           <div className="text-center">
             <h1 className="text-lg font-bold text-red-400 mb-1 font-serif italic">
+              
               {formData.pageTitle || '(visualização em tempo real)'}
             </h1>
             <p className="text-gray-300 text-xs">
               {formData.pageTitle ? formData.pageTitle.toLowerCase() : 'fefefefefscscs'}
             </p>
           </div>
+
+
+
+
+
+
+
+
+
+          
 
           {formData.message && (
             <div className="text-center">
