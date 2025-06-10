@@ -175,10 +175,10 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
           <div className="text-center">
             <h1 className="text-lg font-bold text-red-600  text-3xl   mb-1 font-serif italic">
               
-              {formData.pageTitle || '(visualização em tempo real)'}
+              {formData.pageTitle || ''}
             </h1>
             <p className="text-gray-300 text-xs">
-              {formData.pageTitle ? formData.pageTitle.toLowerCase() : 'fefefefefscscs'}
+              {formData.pageTitle ? formData.pageTitle.toLowerCase() : ''}
             </p>
           </div>
 
@@ -245,7 +245,7 @@ const Preview: React.FC<PreviewProps> = ({ formData }) => {
           {formData.animation && (
             <div className="text-center">
               <p className="text-purple-300 text-xs">
-                ✨ Animação: {
+                ✨ Hoje Nosso Amor Celebra Uma: {
                   formData.animation === 'hearts' ? 'Chuva de Corações' :
                   formData.animation === 'meteors' ? 'Meteoros' :
                   'Aurora Boreal'
